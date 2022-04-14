@@ -20,13 +20,11 @@ public:
             bfs.push_back(node);
 
             for (auto it : adj[node])
-            {
                 if (!vis[it])
                 {
                     q.push(it);
                     vis[it] = 1;
                 }
-            }
         }
         return bfs;
     }
